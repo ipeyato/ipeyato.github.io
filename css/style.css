@@ -236,7 +236,8 @@ button:focus,
     margin-bottom: 15px;
 }
 
-.section-title h2 {
+.section-title h2,
+.section-title h3 {
     margin-bottom: 5px;
     color: #bebece;
 }
@@ -348,6 +349,12 @@ button:focus,
  *-------------------*/
 
 .intro {}
+
+.intro ul {
+    list-style: disc;
+    margin-left: 3rem;
+    margin-bottom: 20px;
+}
 
 /*-------------------
  * Expertise
