@@ -28,7 +28,7 @@ export default function About({ data }: { data: AboutData }) {
           <div className="relative z-10 rounded overflow-hidden">
             <div className="absolute inset-0 bg-green/20 group-hover:bg-transparent transition-colors duration-300 z-10" />
             <Image
-              src="/images/me.jpg"
+              src="/images/me.png"
               alt="Ato Supriyanto"
               width={300}
               height={300}
