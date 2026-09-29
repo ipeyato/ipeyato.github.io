@@ -24,7 +24,7 @@ export default function About({ data }: { data: AboutData }) {
           </ul>
         </div>
 
-        <div className="relative group max-w-xs mx-auto md:mx-0">
+        <div className="relative group self-start max-w-xs mx-auto md:mx-0">
           <div className="relative z-10 rounded overflow-hidden">
             <div className="absolute inset-0 bg-green/20 group-hover:bg-transparent transition-colors duration-300 z-10" />
             <Image
