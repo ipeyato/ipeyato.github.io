@@ -1,8 +1,8 @@
 ---
 title: 'Hi, my name is'
 name: 'Ato Supriyanto'
-subtitle: 'Wordpress Developer.'
+subtitle: 'WordPress Developer.'
 buttonText: 'Get In Touch'
 ---
 
-I'm a WordPress Developer, specializing in implement **Custom WordPress Theme** with a focus on back-end and front-end development. Creating new or even customize site features for existing websites to meet the requirements.
+I'm a WordPress developer with 7+ years of experience building custom themes, page-builder websites and complex integrations for corporate clients, from multilingual enterprise migrations to booking systems connected to ERPs.

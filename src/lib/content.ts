@@ -36,6 +36,7 @@ export interface Job {
 }
 
 export interface FeaturedProject {
+  order: number
   title: string
   cover: string
   external: string
@@ -94,7 +95,7 @@ export async function getFeaturedProjects(): Promise<FeaturedProject[]> {
   const dirs = fs.readdirSync(featuredDir).filter(f =>
     fs.statSync(path.join(featuredDir, f)).isDirectory()
   )
-  return Promise.all(
+  const projects = await Promise.all(
     dirs.map(async dir => {
       const raw = fs.readFileSync(path.join(featuredDir, dir, 'index.md'), 'utf8')
       const { data, content } = matter(raw)
@@ -102,6 +103,7 @@ export async function getFeaturedProjects(): Promise<FeaturedProject[]> {
       return { ...data, content: htmlContent } as FeaturedProject
     })
   )
+  return projects.sort((a, b) => (a.order ?? 99) - (b.order ?? 99))
 }
 
 export async function getProjects(): Promise<Project[]> {

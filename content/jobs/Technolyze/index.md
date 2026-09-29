@@ -1,11 +1,12 @@
 ---
 date: '2020-06-14'
-title: 'Freelancer Wordpress Developer'
+title: 'Freelance WordPress Developer'
 company: 'Technolyze'
 location: 'Greater Jakarta Area, Indonesia'
-range: 'Jun 2020 - Present'
+range: 'Jun 2020 - Nov 2020'
 url: 'https://technolyze.net/'
 ---
 
-- Help Project Manager to build and custom theme from scratch
-- Work with a variety of different Wordpress themes, also plugin like Woocommerce, page builder (Elementor, Divi, Visual Composer, WPBakery), Gravityform, ACF, and so on
+- Built modular page systems with ACF Flexible Content on Underscores-based themes, so admins could assemble pages from pre-built sections without breaking the design
+- Converted a pet resort website to WordPress, including a custom booking form with blockout dates
+- Built a product sale page with pricing tabs and images and options that change with the selected product

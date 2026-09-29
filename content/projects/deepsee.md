@@ -4,12 +4,11 @@ title: 'deepsee'
 github: ''
 external: 'https://deepsee.ai/'
 tech:
-  - HTML
-  - JS
-  - CSS
-  - Wordpress
+  - ACF Flexible Content
+  - Underscores
+  - WordPress
 company: 'technolyze'
 showInProjects: true
 ---
 
-DeepSee delivers on the promise of data science to the business user, with real-time analysis and decision support, to reduce cost, mitigate risk, and increase customer satisfaction.
+Custom theme built on Underscores with ACF Flexible Content sections, so marketing pages can be put together from pre-built blocks.

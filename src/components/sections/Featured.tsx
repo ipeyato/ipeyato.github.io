@@ -37,7 +37,7 @@ export default function Featured({ projects }: { projects: FeaturedProject[] }) 
                 <a href={project.external} target="_blank" rel="noopener noreferrer">
                   <div className="absolute inset-0 bg-green/20 group-hover:bg-transparent transition-colors duration-300 z-10" />
                   <Image
-                    src="/images/lautanberlian.jpg"
+                    src={project.cover}
                     alt={project.title}
                     width={700}
                     height={430}
