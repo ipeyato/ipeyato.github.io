@@ -56,7 +56,7 @@ export default function Featured({ projects }: { projects: FeaturedProject[] }) 
                 style={{ gridRow: 1 }}
               >
                 <p className="font-mono text-green text-sm mb-2">Featured Project</p>
-                <h3 className="text-2xl font-bold text-lightest-slate mb-5">
+                <h3 className={`text-2xl font-bold text-lightest-slate mb-5 md:max-w-[65%] ${isEven ? 'md:ml-auto' : ''}`}>
                   <a href={project.external} target="_blank" rel="noopener noreferrer" className="hover:text-green transition-colors">
                     {project.title}
                   </a>

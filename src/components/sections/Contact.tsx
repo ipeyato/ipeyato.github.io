@@ -10,7 +10,7 @@ export default function Contact({ data }: { data: ContactData }) {
       <p className="text-slate leading-relaxed mb-12 text-lg">
         Whether you have a question or just want to say hi, I&apos;ll try my best to get back to you!
       </p>
-      <a href="mailto:mail.atosupriyanto@gmail.com" className="btn text-base">
+      <a href="mailto:ipeyato@gmail.com" className="btn text-base">
         {data.buttonText}
       </a>
     </section>

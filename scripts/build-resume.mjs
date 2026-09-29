@@ -15,7 +15,7 @@ const contentDir = path.join(root, 'content')
 const outFile = path.join(root, 'public', 'resume.pdf')
 
 const SITE = 'https://ipeyato-github-io.pages.dev'
-const EMAIL = 'mail.atosupriyanto@gmail.com'
+const EMAIL = 'ipeyato@gmail.com'
 const GITHUB = 'https://github.com/ipeyato/'
 const LOCATION = 'Bandung, Indonesia'
 

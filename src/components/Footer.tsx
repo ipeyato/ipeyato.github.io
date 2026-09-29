@@ -2,7 +2,7 @@ const socialLinks = [
   { name: 'GitHub', url: 'https://github.com/ipeyato/' },
   { name: 'Medium', url: 'https://medium.com/@ipeyato/' },
   { name: 'Facebook', url: 'https://facebook.com/ato.ipey/' },
-  { name: 'Twitter', url: 'https://twitter.com/ipeyato/' },
+  { name: 'Instagram', url: 'https://www.instagram.com/ipeyato/' },
 ]
 
 export default function Footer() {
