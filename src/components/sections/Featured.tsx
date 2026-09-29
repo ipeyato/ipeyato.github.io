@@ -29,10 +29,9 @@ export default function Featured({ projects }: { projects: FeaturedProject[] }) 
             >
               {/* Image */}
               <div
-                className={`relative md:col-span-7 rounded overflow-hidden group ${
+                className={`relative order-2 md:order-none md:row-start-1 md:col-span-7 rounded overflow-hidden group ${
                   isEven ? 'md:col-start-1' : 'md:col-start-6'
                 }`}
-                style={{ gridRow: 1 }}
               >
                 <a href={project.external} target="_blank" rel="noopener noreferrer">
                   <div className="absolute inset-0 bg-green/20 group-hover:bg-transparent transition-colors duration-300 z-10" />
@@ -46,37 +45,40 @@ export default function Featured({ projects }: { projects: FeaturedProject[] }) 
                 </a>
               </div>
 
-              {/* Content */}
+              {/* Content: on mobile its two parts sit above and below the image */}
               <div
-                className={`relative z-10 md:col-span-7 ${
+                className={`max-md:contents relative z-10 md:row-start-1 md:col-span-7 ${
                   isEven
                     ? 'md:col-start-6 md:text-right'
                     : 'md:col-start-1 md:text-left'
                 }`}
-                style={{ gridRow: 1 }}
               >
-                <p className="font-mono text-green text-sm mb-2">Featured Project</p>
-                <h3 className={`text-2xl font-bold text-lightest-slate mb-5 md:max-w-[65%] ${isEven ? 'md:ml-auto' : ''}`}>
-                  <a href={project.external} target="_blank" rel="noopener noreferrer" className="hover:text-green transition-colors">
-                    {project.title}
-                  </a>
-                </h3>
+                <div className="order-1">
+                  <p className="font-mono text-green text-sm mb-2">Featured Project</p>
+                  <h3 className={`text-2xl font-bold text-lightest-slate md:mb-5 md:max-w-[65%] ${isEven ? 'md:ml-auto' : ''}`}>
+                    <a href={project.external} target="_blank" rel="noopener noreferrer" className="hover:text-green transition-colors">
+                      {project.title}
+                    </a>
+                  </h3>
+                </div>
 
-                <div
-                  className="bg-light-navy p-6 rounded shadow-xl text-light-slate leading-relaxed mb-6"
-                  dangerouslySetInnerHTML={{ __html: project.content }}
-                />
+                <div className="order-3">
+                  <div
+                    className="bg-light-navy p-6 rounded shadow-xl text-light-slate leading-relaxed mb-6"
+                    dangerouslySetInnerHTML={{ __html: project.content }}
+                  />
 
-                <ul className={`flex flex-wrap gap-3 font-mono text-sm text-slate mb-4 list-none p-0 ${isEven ? 'md:justify-end' : ''}`}>
-                  {project.tech.map(t => (
-                    <li key={t}>{t}</li>
-                  ))}
-                </ul>
+                  <ul className={`flex flex-wrap gap-3 font-mono text-sm text-slate mb-4 list-none p-0 ${isEven ? 'md:justify-end' : ''}`}>
+                    {project.tech.map(t => (
+                      <li key={t}>{t}</li>
+                    ))}
+                  </ul>
 
-                <div className={`flex gap-4 ${isEven ? 'md:justify-end' : ''}`}>
-                  <a href={project.external} target="_blank" rel="noopener noreferrer" className="text-lightest-slate hover:text-green transition-colors" aria-label="External Link">
-                    <ExternalIcon />
-                  </a>
+                  <div className={`flex gap-4 ${isEven ? 'md:justify-end' : ''}`}>
+                    <a href={project.external} target="_blank" rel="noopener noreferrer" className="text-lightest-slate hover:text-green transition-colors" aria-label="External Link">
+                      <ExternalIcon />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
