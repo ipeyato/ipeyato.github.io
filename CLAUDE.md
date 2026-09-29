@@ -8,6 +8,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 npm run dev      # Start dev server at localhost:3000
 npm run build    # Static export to out/
 npm run lint     # ESLint via next lint
+npm run resume   # Regenerate public/resume.pdf from content/ (uses local Chrome)
 ```
 
 No test suite is configured.

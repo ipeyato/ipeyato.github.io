@@ -4,7 +4,7 @@ title: 'Front End Developer'
 company: 'Label Ideas'
 location: 'Indonesia'
 range: 'Oct 2020 - Sep 2021'
-url: ''
+url: 'https://www.instagram.com/labelideas/'
 ---
 
 - Built the bilingual (EN/ID) corporate website for PT ESSA Industries Indonesia Tbk on a custom WordPress theme, including investor relations, governance and sustainability sections
