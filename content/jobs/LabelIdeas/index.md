@@ -5,6 +5,11 @@ company: 'Label Ideas'
 location: 'Indonesia'
 range: 'Oct 2020 - Sep 2021'
 url: 'https://www.instagram.com/labelideas/'
+tech:
+  - 'WordPress'
+  - 'PHP'
+  - 'JavaScript'
+  - 'HTML & CSS'
 ---
 
 - Built the bilingual (EN/ID) corporate website for PT ESSA Industries Indonesia Tbk on a custom WordPress theme, including investor relations, governance and sustainability sections

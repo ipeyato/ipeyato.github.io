@@ -27,11 +27,12 @@ export default function Projects({ projects }: { projects: Project[] }) {
         Other Noteworthy Projects
       </h2>
 
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      {/* On desktop, hovering one card dims the others (group/list), same as Experience. */}
+      <div className="group/list grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {projects.map(project => (
           <div
             key={project.title}
-            className="flex flex-col bg-light-navy rounded p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_30px_-15px_rgba(2,12,27,0.7)]"
+            className="group flex flex-col bg-light-navy rounded-md p-7 transition-all duration-300 lg:group-hover/list:opacity-50 lg:hover:!opacity-100 lg:hover:bg-lightest-navy/60 lg:hover:shadow-[inset_0_1px_0_0_rgba(204,214,246,0.1)] lg:hover:drop-shadow-lg"
           >
             <div className="flex items-start justify-between mb-8">
               <FolderIcon />
@@ -51,9 +52,9 @@ export default function Projects({ projects }: { projects: Project[] }) {
               </div>
             </div>
 
-            <h3 className="text-lightest-slate font-semibold text-lg mb-3">
+            <h3 className="text-lightest-slate font-semibold text-lg mb-3 transition-colors lg:group-hover:text-green">
               {project.external ? (
-                <a href={project.external} target="_blank" rel="noopener noreferrer" className="hover:text-green transition-colors">
+                <a href={project.external} target="_blank" rel="noopener noreferrer" className="text-inherit hover:text-green transition-colors">
                   {project.title}
                 </a>
               ) : (
@@ -66,9 +67,13 @@ export default function Projects({ projects }: { projects: Project[] }) {
               dangerouslySetInnerHTML={{ __html: project.content }}
             />
 
-            <ul className="flex flex-wrap gap-3 mt-5 font-mono text-xs text-slate list-none p-0">
+            <ul className="mt-3 flex flex-wrap list-none p-0" aria-label="Technologies used">
               {project.tech.map(t => (
-                <li key={t}>{t}</li>
+                <li key={t} className="mr-1.5 mt-2">
+                  <span className="flex items-center rounded-full bg-green/10 px-3 py-1 text-xs font-medium leading-5 text-green">
+                    {t}
+                  </span>
+                </li>
               ))}
             </ul>
           </div>

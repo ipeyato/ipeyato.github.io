@@ -5,6 +5,15 @@ company: 'CLLOH'
 location: 'Singapore (remote from Bandung)'
 range: 'Oct 2021 - Present'
 url: 'https://clloh.com/'
+tech:
+  - 'WordPress'
+  - 'Bricks Builder'
+  - 'WPML'
+  - 'Elementor'
+  - 'Odoo API'
+  - 'GSAP'
+  - 'p5.js'
+  - 'WP-CLI'
 ---
 
 - Migrated ~170 multilingual landing pages for Allied Telesis from Drupal to Bricks Builder with WPML country/language routing, and built the migration tooling and automated visual QA behind it

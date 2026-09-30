@@ -5,6 +5,12 @@ company: 'Malayeka Digital Solution'
 location: 'Bandung, Indonesia'
 range: 'Sep 2017 - Jan 2022'
 url: 'https://www.malayeka.id/'
+tech:
+  - 'WordPress'
+  - 'BigCommerce'
+  - 'WooCommerce'
+  - 'Elementor'
+  - 'ACF'
 ---
 
 - Worked on WordPress and e-commerce projects for US clients through a partner agency, communicating with clients directly on a daily basis

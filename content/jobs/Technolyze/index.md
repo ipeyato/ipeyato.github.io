@@ -5,6 +5,10 @@ company: 'Technolyze'
 location: 'Greater Jakarta Area, Indonesia'
 range: 'Jun 2020 - Nov 2020'
 url: 'https://technolyze.net/'
+tech:
+  - 'WordPress'
+  - 'ACF'
+  - 'Underscores'
 ---
 
 - Built modular page systems with ACF Flexible Content on Underscores-based themes, so admins could assemble pages from pre-built sections without breaking the design

@@ -32,6 +32,7 @@ export interface Job {
   range: string
   url: string
   date: string
+  tech: string[]
   content: string
 }
 

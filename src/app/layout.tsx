@@ -3,6 +3,9 @@ import './globals.css'
 import Nav from '@/components/Nav'
 import SocialLinks from '@/components/SocialLinks'
 import EmailLink from '@/components/EmailLink'
+import SmoothScroll from '@/components/SmoothScroll'
+import Cursor from '@/components/Cursor'
+import Spotlight from '@/components/Spotlight'
 
 export const metadata: Metadata = {
   title: 'Ato Supriyanto | WordPress Theme Developer',
@@ -23,6 +26,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className="bg-navy text-slate">
+        <SmoothScroll />
+        <Cursor />
+        <Spotlight />
         <Nav />
         <SocialLinks />
         <EmailLink />

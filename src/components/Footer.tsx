@@ -1,7 +1,6 @@
 const socialLinks = [
   { name: 'GitHub', url: 'https://github.com/ipeyato/' },
   { name: 'Medium', url: 'https://medium.com/@ipeyato/' },
-  { name: 'Facebook', url: 'https://facebook.com/ato.ipey/' },
   { name: 'Instagram', url: 'https://www.instagram.com/ipeyato/' },
 ]
 
@@ -27,8 +26,8 @@ export default function Footer() {
         rel="noopener noreferrer"
         className="group text-center text-light-slate hover:text-green transition-colors"
       >
-        <div>Designed &amp; Built by Ato Supriyanto</div>
-        <div className="text-xs mt-1 opacity-60">Based on Brittany Chiang&apos;s design</div>
+        <div className="text-[11px]">Designed &amp; Built by Ato Supriyanto</div>
+        <div className="text-[10px] mt-1 opacity-60">Based on Brittany Chiang&apos;s design</div>
       </a>
     </footer>
   )

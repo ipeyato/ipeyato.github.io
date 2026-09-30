@@ -28,6 +28,10 @@
 html {
   scroll-behavior: smooth;
 }
+/* Lenis does the smoothing; native smooth scroll would fight it. */
+html.lenis {
+  scroll-behavior: auto;
+}
 
 body {
   background-color: var(--navy);
@@ -172,4 +176,58 @@ body {
   font-family: "SF Mono", "Fira Code", monospace;
   font-size: 16px;
   font-weight: 400;
+}
+
+/* Custom cursor: white dot that trails inside an outline ring */
+.cursor-ring,
+.cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  pointer-events: none;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.cursor-ring {
+  width: 32px;
+  height: 32px;
+  margin: -16px 0 0 -16px;
+  border: 1.5px solid var(--lightest-slate);
+}
+.cursor-ring::after {
+  content: '';
+  position: absolute;
+  inset: -1.5px;
+  border-radius: 50%;
+  border: 1.5px solid var(--green);
+  opacity: 0;
+  transform: scale(1);
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+.cursor-ring.is-hovering {
+  border-color: transparent;
+}
+.cursor-ring.is-hovering::after {
+  opacity: 1;
+  transform: scale(1.5);
+}
+.cursor-dot {
+  width: 6px;
+  height: 6px;
+  margin: -3px 0 0 -3px;
+  background-color: var(--white);
+}
+html.has-cursor .cursor-ring,
+html.has-cursor .cursor-dot {
+  opacity: 1;
+}
+html.has-cursor.cursor-hidden .cursor-ring,
+html.has-cursor.cursor-hidden .cursor-dot {
+  opacity: 0;
+}
+html.has-cursor,
+html.has-cursor * {
+  cursor: none !important;
 }
