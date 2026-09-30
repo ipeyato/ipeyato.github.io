@@ -16,4 +16,6 @@ I enjoy building websites that look exactly like the design, stay easy for clien
 
 After graduating from [Unikom University](https://www.unikom.ac.id/), I joined Malayeka Digital Solution, working on WordPress and e-commerce projects for clients in the US and Indonesia. Today I'm a WordPress developer at CLLOH, where I work on enterprise projects such as Drupal-to-WordPress migrations, multilingual sites and custom integrations.
 
+I use AI tools like Claude Code to fix bugs, build new features and get routine work done faster. Every change still gets my own eyeball check. Sensitive data stays out of it.
+
 Here are a few technologies I've been working with recently:
