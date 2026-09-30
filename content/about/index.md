@@ -3,8 +3,10 @@ title: 'About Me'
 avatar: './ipey.jpg'
 skills:
   - WordPress & PHP
-  - Bricks Builder & Elementor
+  - Elementor & Bricks Builder
   - ACF Flexible Content
+  - Figma to WordPress
+  - Google Tag Manager
   - WPML (multilingual)
   - JavaScript & GSAP
   - WP-CLI & Playwright
